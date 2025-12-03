@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='globals.css') }}">
+    {% block scripts %}{% endblock %}
+</head>
+<body>
+    {% block contents %}
+    <h1>Empty PAGE</h1>
+    {% endblock %}
+    {% block scriptsin %}
+    {% endblock %}
+</body>
+</html>
